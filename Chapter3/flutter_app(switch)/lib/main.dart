@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 // StatefulWidget은 State 클래스 필요
+// MyApp 클래스가 현재 화면을 주시하다가 상태가 변경되면 감지하고 _MyApp 클래스가 화면 갱신
 class MyApp extends StatefulWidget {
   @override
   // createState() 함수 재정의.
-  // MyApp 클래스가 현재 화면을 주시하다가 상태가 변경되면 감지하고 _MyApp 클래스가 화면 갱신
   State<StatefulWidget> createState() {
     return _MyApp();
   }
