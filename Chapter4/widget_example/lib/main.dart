@@ -36,7 +36,10 @@ class _WidgetExampleState extends State<WidgetApp>{
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.all(15),
-                child: Text('flutter'),
+                child: Text(
+                  '결과 : $sum',
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
               Padding(
                 padding: EdgeInsets.only(left: 20, right: 20),
@@ -57,6 +60,10 @@ class _WidgetExampleState extends State<WidgetApp>{
                     ],
                   ),
                   onPressed: (){
+                    setState(() {
+                      int result = int.parse(value1.value.text) + int.parse(value2.value.text);
+                      sum = '$result';
+                    });
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.amber,
