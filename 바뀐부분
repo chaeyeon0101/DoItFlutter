@@ -1,0 +1,2 @@
+http.get(someString) -> http.get(Uri.parse(someString))
+http.post(someString) -> http.post(Uri.parse(someString))
